@@ -64,7 +64,7 @@ static void MX_USB_PCD_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+extern void test(void);
 /* USER CODE END 0 */
 
 /**
