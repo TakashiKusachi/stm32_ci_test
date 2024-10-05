@@ -10,3 +10,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - run: echo "Test Code"
+            - uses: xanderhendriks/action-build-stm32cubeide@v13.0
+              with:
+                project-path: '.'
+                project-target: 'Debug'
