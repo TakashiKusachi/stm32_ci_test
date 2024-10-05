@@ -1,0 +1,12 @@
+name: stm32_build_test
+run-name: Build test
+on:
+    pull_request:
+        branches:
+            - main
+            - develop
+jobs:
+    BuildActions:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Test Code"
