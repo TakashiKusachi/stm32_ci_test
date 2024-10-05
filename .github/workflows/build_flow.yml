@@ -1,0 +1,18 @@
+name: stm32_build_test
+run-name: Build test
+on:
+    pull_request:
+        branches:
+            - main
+            - develop
+jobs:
+    BuildActions:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Test Code"
+            - name: Checkout the repository
+              uses: actions/checkout@v3.1.0
+            - uses: xanderhendriks/action-build-stm32cubeide@v13.0
+              with:
+                project-path: '.'
+                project-target: 'github_ci_test'
